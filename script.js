@@ -136,7 +136,7 @@ function updateCart() {
   let count = 0;
   cart.forEach(item => {
     // Busca el producto para obtener la imagen principal y nombre traducido
-    const prod = productos.find(p => p.id === item.id);
+    const prod = window.productos.find(p => p.id === item.id);
     let nombre = prod ? (currentLang === 'fr' ? (prod.nom || prod.nombre) : prod.nombre) : item.name;
     const imgSrc = prod && prod.imagenes.length > 0 ? prod.imagenes[0] : '';
     // Usar el precio del array directamente, sin conversión
@@ -179,7 +179,7 @@ function addToCart(id, name, basePrice) {
     return;
   }
 
-  const productoOriginal = productos.find(p => p.id === id);
+  const productoOriginal = window.productos.find(p => p.id === id);
   const image = productoOriginal?.imagenes?.[0] || '';
 
   cart.push({ id, name, basePrice, image, qty: 1 });
@@ -308,7 +308,7 @@ function renderCartPreview() {
   }
   let total = 0;
   cartPreview.innerHTML = cart.map(item => {
-    const prod = productos.find(p => p.id === item.id);
+    const prod = window.productos.find(p => p.id === item.id);
     let nombre = prod ? (currentLang === 'fr' ? (prod.nom || prod.nombre) : prod.nombre) : item.name;
     const imgSrc = prod && prod.imagenes.length > 0 ? prod.imagenes[0] : '';
     // Usar el precio del array directamente, sin conversión
@@ -339,10 +339,11 @@ document.addEventListener('DOMContentLoaded', () => {
   currentCurrency = 'gs';
   
   // Asegurar que productos está disponible
-  if (typeof productos !== 'undefined' && productos.length > 0) {
+  if (typeof productos !== 'undefined' && Array.isArray(productos) && productos.length > 0) {
     window.productos = productos;
-    productosFiltrados = productos.slice();
+    productosFiltrados = window.productos.slice();
   } else {
+    console.warn('Productos no cargados correctamente');
     window.productos = [];
     productosFiltrados = [];
   }
@@ -486,7 +487,7 @@ function renderVistaCategorias() {
   const contenedor = document.getElementById('productos-container');
   if (!contenedor) return;
   contenedor.innerHTML = '';
-  const categorias = agruparPorCategoria(productos);
+  const categorias = agruparPorCategoria(window.productos);
   Object.entries(categorias).forEach(([cat, prods]) => {
     // Usar imagen personalizada para la categoría "Collares"
     const imagenVista = cat === "Collares"
@@ -505,7 +506,7 @@ function renderVistaCategorias() {
 function mostrarCategoria(cat) {
   const contenedor = document.getElementById('productos-container');
   if (!contenedor) return;
-  const productosCat = productos.filter(
+  const productosCat = window.productos.filter(
     p => (p.categoria || getCategoriaFromImagen(p.imagenes[0])) === cat
   );
   renderProductos(productosCat, false);
@@ -551,7 +552,7 @@ window.cambiarImagenCarrusel = function(cardId, dir, event) {
   if (!card) return;
   const img = card.querySelector('.product-image');
   const prodId = cardId.replace('prod-', '');
-  const prod = productos.find(p => p.id === prodId);
+  const prod = window.productos.find(p => p.id === prodId);
   if (!prod) return;
   let idx = parseInt(img.getAttribute('data-idx')) || 0;
   idx = (idx + dir + prod.imagenes.length) % prod.imagenes.length;
@@ -751,7 +752,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function llenarMenuCategorias() {
   const menu = document.getElementById('menu-categorias');
   if (!menu) return;
-  const categorias = Array.from(new Set(productos.map(p => getCategoriaFromImagen(p.imagenes[0]))));
+  const categorias = Array.from(new Set(window.productos.map(p => getCategoriaFromImagen(p.imagenes[0])))) || [];
   menu.innerHTML = '';
   categorias.forEach(cat => {
     // Traducción dinámica de la categoría
