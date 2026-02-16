@@ -21,13 +21,10 @@ const translations = {
 // const produits = [...];  // Francés
 
 // --- Guardar referencias globales ---
-window.productos_es = typeof productos !== 'undefined' ? productos : [];
-window.productos = window.productos_es; // Solo español
-
 let currentLang = "es";
 let currentCurrency = "gs";
 let cart = [];
-let productosFiltrados = productos.slice();
+let productosFiltrados = [];
 
 
 
@@ -340,7 +337,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Idioma fijo en español
   currentLang = 'es';
   currentCurrency = 'gs';
-  window.productos = window.productos_es;
+  
+  // Asegurar que productos está disponible
+  if (typeof productos !== 'undefined' && productos.length > 0) {
+    window.productos = productos;
+    productosFiltrados = productos.slice();
+  } else {
+    window.productos = [];
+    productosFiltrados = [];
+  }
   
   loadCart();
   updateCart();
@@ -351,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Retrasar la carga de productos para mejorar la experiencia inicial
   setTimeout(() => {
     renderProductos(productosFiltrados, true);
-  }, 0);
+  }, 100);
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -723,18 +728,23 @@ window.irPaginaProductos = function(num) {
 };
 
 // Reiniciar página al buscar o filtrar
-document.getElementById('search-bar').addEventListener('input', function() {
-  paginaActual = 1;
-  const query = this.value.trim().toLowerCase();
-  productosFiltrados = productos.filter(producto => {
-    const nombre = producto.nombre.toLowerCase();
-    const precio = producto.precio.toString();
-    return (
-      nombre.includes(query) ||
-      precio.includes(query)
-    );
-  });
-  renderProductos(productosFiltrados, true);
+document.addEventListener('DOMContentLoaded', function() {
+  const searchBar = document.getElementById('search-bar');
+  if (searchBar) {
+    searchBar.addEventListener('input', function() {
+      paginaActual = 1;
+      const query = this.value.trim().toLowerCase();
+      productosFiltrados = window.productos.filter(producto => {
+        const nombre = producto.nombre.toLowerCase();
+        const precio = producto.precio.toString();
+        return (
+          nombre.includes(query) ||
+          precio.includes(query)
+        );
+      });
+      renderProductos(productosFiltrados, true);
+    });
+  }
 });
 
 // Llenar menú de categorías
