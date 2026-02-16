@@ -1,0 +1,17 @@
+node_modules/
+.vercel/
+.env
+dist/
+build/
+Thumbs.db
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+/.idea
+/.vscode
+__pycache__/
+*.pyc
+OneDriveTemp/

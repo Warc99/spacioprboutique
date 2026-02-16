@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spacio PR Boutique</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="productos.js"></script>
+  <script src="script.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <a href="#productos" id="productos-menu-link">
+        <img src="logo.png" alt="Spacio PR Boutique Logo" class="logo" />
+      </a>
+    </div>
+    <nav class="header-nav">
+      <ul class="nav-links">
+        <li><a href="#productos">Inicio</a></li>
+        <li class="nav-item-dropdown">
+          <a href="#productos" id="productos-menu-link">Productos</a>
+          <ul id="menu-categorias" class="menu-categorias">
+            <li><a href="#">Collares</a></li>
+            <li><a href="#">Pulseras</a></li>
+            <li><a href="#">Aros</a></li>
+          </ul>
+        </li>
+        <li><a href="#sobre">Sobre Mí</a></li>
+        <li><a href="#redes" id="redes-menu-link">Redes</a></li>
+      </ul>
+    </nav>
+    <div class="header-search">
+      <input type="text" id="search-bar" placeholder="Buscar por nombre o precio..." />
+    </div>
+    <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="header-controls">
+      <div class="cart-icon" onclick="toggleCart()">
+        <span>🛒</span>
+        <span id="cart-count" class="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <h1>Tienda de Joyas con Flores Naturales</h1>
+      <p>En Spacio PR Boutique, disponemos de joyas únicas hechas a mano con flores reales. Nuestros productos están diseñados para amantes de la bijouterie y las manualidades, fusionando la elegancia floral con la creatividad artesanal. Descubre piezas exclusivas que reflejan la belleza natural de las flores.</p>
+    </section>
+
+    <section id="productos">
+      <h2>Productos</h2>
+      <div id="categorias-tabs"></div>
+      <div id="productos-container"></div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre Mí</h2>
+      <p>Mi nombre es Lina y quiero compartir contigo una de mis mayores pasiones: la creación de bijouterie inspirada en la belleza de las flores. Amo las orquídeas y la naturaleza en todas sus formas, y de esa admiración nació el deseo de darles una segunda vida a través de mis creaciones. Cada pieza que diseño es única y especial, como cada flor que la inspira. No existen dos iguales, y en esa singularidad reside su encanto. Mis accesorios reflejan elegancia, delicadeza y versatilidad, ideales para cualquier ocasión -desde una cena formal hasta un día casual-, acompañando a quien los luce con un toque natural y auténtico.</p>
+    </section>
+  </main>
+
+  <footer id="redes">
+    <p>
+      Spacio PR Boutique &copy; 2025. Todos los derechos reservados.
+    </p>
+    <div class="socials">
+      <a href="https://www.instagram.com/floralcreationsbylinaart" target="_blank" aria-label="Instagram">
+        <img src="redes/instagram.png" alt="Instagram" width="28" height="28" style="vertical-align:middle;">
+      </a>
+      <a href="https://wa.me/595984404597" target="_blank" aria-label="WhatsApp">
+        <img src="redes/whatsapp.png" alt="WhatsApp" width="28" height="28" style="vertical-align:middle;">
+      </a>
+      <a href="https://www.tiktok.com/@floralcreationsart" target="_blank" aria-label="TikTok">
+        <img src="redes/tiktok.png" alt="TikTok" width="28" height="28" style="vertical-align:middle;">
+      </a>
+    </div>
+  </footer>
+
+  <aside id="cart" class="cart-modal hidden">
+    <div class="cart-modal-content" id="cart-modal-content">
+      <button class="cart-close" onclick="toggleCart()">✕</button>
+      <h3>Carrito</h3>
+      <div id="cartItems"></div>
+      <div id="cartTotal"></div>
+      <button id="whatsapp-btn" class="whatsapp-btn" onclick="sendWhatsAppOrder()">Enviar pedido por WhatsApp</button>
+    </div>
+  </aside>
+
+  <div id="cart-preview" class="cart-preview hidden"></div>
+
+  <!-- Popup de producto -->
+  <div id="producto-popup-bg" style="display:none;">
+    <div id="producto-popup">
+      <button id="cerrar-popup" aria-label="Cerrar">✕</button>
+      <div id="popup-gallery"></div>
+      <h3 id="popup-title"></h3>
+      <div id="popup-price"></div>
+      <div id="popup-desc"></div>
+      <button id="popup-add-cart" class="btn-add-cart">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox-bg" style="display:none;">
+    <button id="lightbox-prev" class="lightbox-arrow" aria-label="Anterior">&#8592;</button>
+    <div id="lightbox-content">
+      <button id="cerrar-lightbox" aria-label="Cerrar">✕</button>
+      <button id="zoom-in" class="zoom-btn" title="Zoom in">+</button>
+      <button id="zoom-out" class="zoom-btn" title="Zoom out">−</button>
+      <img id="lightbox-img" src="" alt="Vista ampliada" />
+    </div>
+    <button id="lightbox-next" class="lightbox-arrow" aria-label="Siguiente">&#8594;</button>
+  </div>
+</body>
+</html>
