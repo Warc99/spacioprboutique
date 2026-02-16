@@ -19,7 +19,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/27.webp",
-      "imagenes/Collares/27-1.webp",
+      "imagenes/Collares/27-1.webp"
     ],
     "desc": "Collar con pequeñas perlas negras y una rosa color vino, simbolizando elegancia y delicadeza."
   },
@@ -30,7 +30,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/30.webp",
-      "imagenes/Collares/30-1.webp",
+      "imagenes/Collares/30-1.webp"
     ],
     "desc": "Collar doble en capas, una hecha de perlas negras y una cadena dorada delicada con una rosa roja intensa."
   },
@@ -41,7 +41,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/32.webp",
-      "imagenes/Collares/32-1.webp",
+      "imagenes/Collares/32-1.webp"
     ],
     "desc": "Collar con perlas pequeñas intercaladas en dorado y plateado, con un dije de hoja de hiedra simboliza la vida continua, resilencia."
   },
@@ -52,7 +52,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/33.webp",
-      "imagenes/Collares/33-1.webp",
+      "imagenes/Collares/33-1.webp"
     ],
     "desc": "Collar con perlas negras y un dije de la flor de Maracuyá o Mburucuyá, simbolizando la pasión y la espiritualidad."
   },
@@ -63,7 +63,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/37.webp",
-      "imagenes/Collares/37-1.webp",
+      "imagenes/Collares/37-1.webp"
     ],
     "desc": "Collar con piedras turquesas y doradas, con un dije de orquídea blanca, ideal para un look fresco y elegante."
   },
@@ -74,7 +74,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/39.webp",
-      "imagenes/Collares/39-1.webp",
+      "imagenes/Collares/39-1.webp"
     ],
     "desc": "Collar incluye dos cadenas doradas, una tipo serpiente más gruesa y otra más fina con eslabones ajustables, con un dije de orquídea lila."
   },
@@ -85,7 +85,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/42.webp",
-      "imagenes/Collares/42-1.webp",
+      "imagenes/Collares/42-1.webp"
     ],
     "desc": "Collar dorado ajustable tipo colgante, hecho de una rosa en colores degradados lilas y blancos, detalle colgante de perlas blancas sofisticado."
   },
@@ -96,7 +96,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/43.webp",
-      "imagenes/Collares/43-1.webp",
+      "imagenes/Collares/43-1.webp"
     ],
     "desc": "collar de perlas negras hecho de una orquídea lila con detalles blancos, ideal para un look elegante y moderno. Su diseño versátil lo hace perfecto para cualquier ocasión."
   },
@@ -107,7 +107,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/49.webp",
-      "imagenes/Collares/49-1.webp",
+      "imagenes/Collares/49-1.webp"
     ],
     "desc": "Ideal para la ocasión que desees y no pasar desapercibida."
   },
@@ -118,7 +118,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/50.webp",
-      "imagenes/Collares/50-1.webp",
+      "imagenes/Collares/50-1.webp"
     ],
     "desc": "Collar de piedras de Agata en tonos naranjas, hecho con la hoja de roble, simbolizando la fuerza y la resistencia."
   },
@@ -129,7 +129,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/51.webp",
-      "imagenes/Collares/51-1.webp",
+      "imagenes/Collares/51-1.webp"
     ],
     "desc": "Collar de perlas verdes y pequeñas perlitas de metal, acero inoxidable, hecho con la hoja de Erable." 
   },
@@ -140,7 +140,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/53.webp",
-      "imagenes/Collares/53-1.webp",
+      "imagenes/Collares/53-1.webp"
     ],
     "desc": "Ideal para un look fresco y único."
   },
@@ -151,7 +151,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/54.webp",
-      "imagenes/Collares/54-1.webp",
+      "imagenes/Collares/54-1.webp"
     ],
     "desc": "Collar elegante, pensado para cualquier ocasión."
   },
@@ -162,7 +162,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/55.webp",
-      "imagenes/Collares/55-1.webp",
+      "imagenes/Collares/55-1.webp"
     ],
     "desc": "Collar adaptable, elegante, hecho con la flor de Cattleya."
   },
@@ -173,7 +173,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/58.webp",
-      "imagenes/Collares/58-1.webp",
+      "imagenes/Collares/58-1.webp"
     ],
     "desc": "Collar con esmeralda negra y perlas de agua dulce."
   },
@@ -185,7 +185,7 @@ const productos = [
     "imagenes": [
       "imagenes/Collares/60.webp",
       "imagenes/Collares/60-1.webp",
-      "imagenes/Collares/60-2.webp",
+      "imagenes/Collares/60-2.webp"
     ],
     "desc": "La hoja de Erable fucsia viene de las Ardenas de Bélgica, famoso por su belleza natural."
   },
@@ -196,7 +196,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/63.webp",
-      "imagenes/Collares/63-1.webp",
+      "imagenes/Collares/63-1.webp"
     ],
     "desc": "Este collar combina la energía positiva del cuarzo y la belleza atemporal de una orquídea real preservada, creando una joya única y con significado."
   },
@@ -207,7 +207,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/64.webp",
-      "imagenes/Collares/64-1.webp",
+      "imagenes/Collares/64-1.webp"
     ],
     "desc": "Ideal accesorio artesanal combinado con elegancia y modernidad."
   },
@@ -218,7 +218,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/65.webp",
-      "imagenes/Collares/65-1.webp",
+      "imagenes/Collares/65-1.webp"
     ],
     "desc": "Collar de la flor de Cattleya, con motivo de abejas, combinación de elegancia y naturaleza."
   },
@@ -229,7 +229,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/67.webp",
-      "imagenes/Collares/67-1.webp",
+      "imagenes/Collares/67-1.webp"
     ],
     "desc": "Ideal para quienes buscan un accesorio distinto, con carácter, combinando naturaleza y sofisticación, en una pieza única."
   },
@@ -240,7 +240,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/69.webp",
-      "imagenes/Collares/69-1.webp",
+      "imagenes/Collares/69-1.webp"
     ],
     "desc":"Collar elegante y sofisticado, hermosos colores, complemento perfecto para ocasiones únicas."
   },
@@ -252,7 +252,7 @@ const productos = [
     "imagenes": [
       "imagenes/Collares/70.webp",
       "imagenes/Collares/70-1.webp",
-      "imagenes/Collares/70-2.webp",
+      "imagenes/Collares/70-2.webp"
     ],
     "desc":"Este collar artesanal combina la belleza etérea de una orquídea natural preservada con la riqueza terrenal del ágata, creando una pieza única que simboliza la fuerza, la delicadeza y la transformación, ideal para realzar tu estilo con un toque de naturaleza eterna y elegancia sofisticada, reflejando un espíritu resiliente y conectado con la vida."
   },
@@ -264,7 +264,7 @@ const productos = [
     "imagenes": [
       "imagenes/Collares/71.webp",
       "imagenes/Collares/71-1.webp",
-      "imagenes/Collares/71-2.webp",
+      "imagenes/Collares/71-2.webp"
     ],
     "desc": "Collar elegante y único, hecho de materiales de alta calidad."
   },
@@ -276,7 +276,7 @@ const productos = [
     "imagenes": [
       "imagenes/Collares/72.webp",
       "imagenes/Collares/72-1.webp",
-      "imagenes/Collares/72-2.webp",
+      "imagenes/Collares/72-2.webp"
     ],
     "desc": "Collar con colores vibrantes, llamativo y sofisticado."
   },
@@ -287,7 +287,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/73.webp",
-      "imagenes/Collares/73-1.webp",
+      "imagenes/Collares/73-1.webp"
     ],
     "desc": "Ideal para un look fresco y moderno, su diseño versátil lo hace perfecto para cualquier ocasión."
   },
@@ -298,7 +298,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/74.webp",
-      "imagenes/Collares/74-1.webp",
+      "imagenes/Collares/74-1.webp"
     ],
     "desc": "Elegante y sofisticado, hecho para acompañarte en el lugar que desees."
   },
@@ -309,7 +309,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/75.webp",
-      "imagenes/Collares/75-1.webp",
+      "imagenes/Collares/75-1.webp"
     ],
     "desc": "Trabajado cuidadosamente, material de acero inoxidable, ideal para los amantes de la orquídea."
   },
@@ -320,7 +320,7 @@ const productos = [
     "categoria": "Collares",
     "imagenes": [
       "imagenes/Collares/76.webp",
-      "imagenes/Collares/76-1.webp",
+      "imagenes/Collares/76-1.webp"
     ],
     "desc": "Collar en colores llamativos y vibrantes, para ocasiones en donde desee destacar con su look."
   },
@@ -335,7 +335,7 @@ const productos = [
     "categoria": "Conjunto pendiente y collar",
     "imagenes": [
       "imagenes/Conjunto pendiente y collar/10.webp",
-      "imagenes/Conjunto pendiente y collar/10-1.webp",
+      "imagenes/Conjunto pendiente y collar/10-1.webp"
     ],
     "desc": "Hecho a mano cuidadosamente"
   },
@@ -346,7 +346,7 @@ const productos = [
     "categoria": "Conjunto pendiente y collar",
     "imagenes": [
       "imagenes/Conjunto pendiente y collar/14.webp",
-      "imagenes/Conjunto pendiente y collar/14-1.webp",
+      "imagenes/Conjunto pendiente y collar/14-1.webp"
     ],
     "desc": "Conjunto elegante y único, ideal para los amantes de las orquídeas que quisieran llevar consigo en cualquier ocasión."
   },
@@ -357,7 +357,7 @@ const productos = [
     "categoria": "Conjunto pendiente y collar",
     "imagenes": [
       "imagenes/Conjunto pendiente y collar/15.webp",
-      "imagenes/Conjunto pendiente y collar/15-1.webp",
+      "imagenes/Conjunto pendiente y collar/15-1.webp"
     ],
     "desc": "Conjunto elegante y único, trabajado cuidadosamente a mano con material de acero inoxidable, con la flor de pensamiento."
   },
@@ -368,7 +368,7 @@ const productos = [
     "categoria": "Conjunto pendiente y collar",
     "imagenes": [
       "imagenes/Conjunto pendiente y collar/16.webp",
-      "imagenes/Conjunto pendiente y collar/16-1.webp",
+      "imagenes/Conjunto pendiente y collar/16-1.webp"
     ],
     "desc": "Naturales y sofisticados, totalmente artesanales trabajados con materiales de acero inoxidable, son el complemento ideal para cualquier ocasión"
   },
@@ -379,7 +379,7 @@ const productos = [
     "categoria": "Conjunto pendiente y collar",
     "imagenes": [
       "imagenes/Conjunto pendiente y collar/17.webp",
-      "imagenes/Conjunto pendiente y collar/17-1.webp",
+      "imagenes/Conjunto pendiente y collar/17-1.webp"
     ],
     "desc": "Conjunto llamativo y elegante, para un look diferente y moderno."
   },
@@ -390,7 +390,7 @@ const productos = [
     "categoria": "Conjunto pendiente y collar",
     "imagenes": [
       "imagenes/Conjunto pendiente y collar/18.webp",
-      "imagenes/Conjunto pendiente y collar/18-1.webp",
+      "imagenes/Conjunto pendiente y collar/18-1.webp"
     ],
     "desc": "Collar y pendientes dorados de acero inoxidable, hecho de margaritas blancas, detalle de perlas blancas en el collar."
   },
@@ -402,7 +402,7 @@ const productos = [
     "imagenes": [
       "imagenes/Conjunto pendiente y collar/19.webp",
       "imagenes/Conjunto pendiente y collar/19-1.webp",
-      "imagenes/Conjunto pendiente y collar/19-2.webp",
+      "imagenes/Conjunto pendiente y collar/19-2.webp"
     ],
     "desc": "Conjunto elegante único, color lila vibrante, especial para la ocasión que desees."
   },
@@ -522,7 +522,7 @@ const productos = [
     "categoria": "Hebillas",
     "imagenes": [
       "imagenes/Hebillas/24.webp",
-      "imagenes/Hebillas/24-1.webp",
+      "imagenes/Hebillas/24-1.webp"
     ],
     "desc": "Trabajamos cuidadosamente para preservar los colores naturales de la flor."
   },
@@ -533,7 +533,7 @@ const productos = [
     "categoria": "Hebillas",
     "imagenes": [
       "imagenes/Hebillas/26.webp",
-      "imagenes/Hebillas/26-1.webp",
+      "imagenes/Hebillas/26-1.webp"
     ],
     "desc": "Sofisticada y delicada, preservando sus colores naturales."
   },
@@ -544,7 +544,7 @@ const productos = [
     "categoria": "Hebillas",
     "imagenes": [
       "imagenes/Hebillas/28.webp",
-      "imagenes/Hebillas/28-1.webp",
+      "imagenes/Hebillas/28-1.webp"
     ],
     "desc": "Es un accesorio llamativo que aporta un toque de naturaleza y elegancia a cada look."
   },
@@ -662,7 +662,7 @@ const productos = [
     "categoria": "Anillos",
     "imagenes": [
       "imagenes/Anillos/25.webp",
-      "imagenes/Anillos/25-1.webp",
+      "imagenes/Anillos/25-1.webp"
     ],
     "desc": "Orquídea leopardo de colores vibrantes. Ajustable - Acero inoxidable."
   },
@@ -810,7 +810,7 @@ const productos = [
     "imagenes": [
       "imagenes/Pendientes/60.webp",
       "imagenes/Pendientes/60-1.webp",
-      "imagenes/Pendientes/60-2.webp",
+      "imagenes/Pendientes/60-2.webp"
     ],
     "desc": "Hecho a mano cuidadosamente, para preservar sus colores naturales."
   },
@@ -822,7 +822,7 @@ const productos = [
     "imagenes": [
       "imagenes/Pendientes/61.webp",
       "imagenes/Pendientes/61-1.webp",
-      "imagenes/Pendientes/61-2.webp",
+      "imagenes/Pendientes/61-2.webp"
     ],
     "desc": "Ideal para un look limpio y sofisticado, para ocasiones únicas."
   },
@@ -833,7 +833,7 @@ const productos = [
     "categoria": "Pendientes",
     "imagenes": [
       "imagenes/Pendientes/62.webp",
-      "imagenes/Pendientes/62-1.webp",
+      "imagenes/Pendientes/62-1.webp"
     ],
     "desc": "La flor de Jazmin refleja glamour y delicadeza, combinando con tu mejor look."
   },
